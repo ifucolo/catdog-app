@@ -1,6 +1,6 @@
 package example.com.catdogapp.api
 
-import example.com.catdogapp.feature.home.dogs.infrastructure.model.DogPayload
+import example.com.catdogapp.feature.home.tabs.dogs.infrastructure.model.DogPayload
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.POST

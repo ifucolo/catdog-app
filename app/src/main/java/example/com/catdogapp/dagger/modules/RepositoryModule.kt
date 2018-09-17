@@ -2,10 +2,10 @@ package com.example.com.mptvshow.di
 
 import dagger.Module
 import dagger.Provides
-import example.com.catdogapp.feature.home.cats.domain.CatSource
-import example.com.catdogapp.feature.home.cats.infrastructure.CatInfrastructure
-import example.com.catdogapp.feature.home.dogs.domain.DogSource
-import example.com.catdogapp.feature.home.dogs.infrastructure.DogInfrastructure
+import example.com.catdogapp.feature.home.tabs.cats.domain.CatSource
+import example.com.catdogapp.feature.home.tabs.cats.infrastructure.CatInfrastructure
+import example.com.catdogapp.feature.home.tabs.dogs.domain.DogSource
+import example.com.catdogapp.feature.home.tabs.dogs.infrastructure.DogInfrastructure
 
 
 @Module

@@ -5,8 +5,8 @@ import dagger.Component
 import example.com.catdogapp.CatDogApplication
 import example.com.catdogapp.dagger.modules.AppModule
 import example.com.catdogapp.dagger.modules.NetModule
-import example.com.catdogapp.feature.home.cats.ui.CatTabFragment
-import example.com.catdogapp.feature.home.dogs.ui.DogTabFragment
+import example.com.catdogapp.feature.home.tabs.cats.ui.CatTabFragment
+import example.com.catdogapp.feature.home.tabs.dogs.ui.DogTabFragment
 import javax.inject.Singleton
 
 @Singleton

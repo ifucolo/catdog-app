@@ -10,4 +10,15 @@
 
     <string name="dogs">Dogs</string>
     <string name="cats">Cats</string>
+
+    <string name="life_span">Life Span</string>
+    <string name="breed_for">Breed For</string>
+    <string name="breed_group">Breed Group</string>
+    <string name="temperament">Temperament</string>
+    <string name="weight_imperial">Weight Imperial</string>
+    <string name="weight_metric">Weight Metric</string>
+    <string name="height_imperial">Height Imperial</string>
+    <string name="height_metric">Height Metric</string>
+
+
 </resources>
