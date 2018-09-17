@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CatDogApp</string>
+
+    <string name="cat_url">https://api.thecatapi.com/</string>
+    <string name="dog_url">https://api.thedogapi.com/</string>
+    <string name="api_key">837cbdfc-8e24-4599-b70a-8c3bfd7c299f</string>
+
+    <string name="loading">Loading…</string>
+    <string name="try_again">Try again</string>
+
+    <string name="dogs">Dogs</string>
+    <string name="cats">Cats</string>
+</resources>
