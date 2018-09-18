@@ -19,6 +19,7 @@
     <string name="weight_metric">Weight Metric</string>
     <string name="height_imperial">Height Imperial</string>
     <string name="height_metric">Height Metric</string>
+    <string name="verify_connection">Check your Connection</string>
 
 
 </resources>

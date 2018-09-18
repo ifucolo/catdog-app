@@ -15,6 +15,7 @@ import example.com.catdogapp.feature.home.tabs.dogs.domain.entity.DogDetail
 import example.com.catdogapp.feature.home.tabs.dogs.presentation.DogPresenter
 import example.com.catdogapp.feature.home.tabs.dogs.presentation.DogView
 import example.com.catdogapp.shared.ui.BaseFragment
+import example.com.catdogapp.utill.extensions.toast
 import kotlinx.android.synthetic.main.fragment_tab.*
 import javax.inject.Inject
 
@@ -87,6 +88,8 @@ class DogTabFragment: BaseFragment(), DogView {
     }
 
     override fun showError() {
+        context?.toast(R.string.verify_connection)
+
         recyclerView.hide()
         btnTryAgain.show()
     }

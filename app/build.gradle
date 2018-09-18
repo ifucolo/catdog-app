@@ -30,7 +30,13 @@ android {
         }
     }
 
-
+    signingConfigs {
+        holonis {
+            keyAlias 'catdog'
+            keyPassword '201192'
+            storePassword '201192'
+        }
+    }
 }
 
 dependencies {
