@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".feature.home.ui.HomeActivity"
+            android:name=".feature.splash.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,8 @@
         <activity
             android:name=".feature.detail.DogDetailActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".feature.splash.SplashActivity"></activity>
+        <activity android:name=".feature.home.ui.HomeActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
