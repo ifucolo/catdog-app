@@ -2,34 +2,15 @@ package example.com.catdogapp
 
 import android.app.Application
 import com.facebook.stetho.Stetho
-import example.com.catdogapp.dagger.ApplicationComponent
-import example.com.catdogapp.dagger.DaggerApplicationComponent
-import example.com.catdogapp.dagger.modules.AppModule
+import example.com.catdogapp.di.appModule
+import example.com.catdogapp.di.remoteDatasourceModule
+import org.koin.android.ext.android.startKoin
 
 class CatDogApplication: Application() {
 
-    lateinit var applicationComponent: ApplicationComponent
-        private set
-
-    companion object {
-
-        private lateinit var instance: CatDogApplication
-
-        fun get(): CatDogApplication {
-            return instance
-        }
-    }
-
     override fun onCreate() {
         super.onCreate()
-
-        instance = this
-
-        applicationComponent = DaggerApplicationComponent.builder()
-                .appModule(AppModule(this))
-                .build()
-
-        applicationComponent.inject(this)
+        startKoin(this, listOf(appModule, remoteDatasourceModule))
 
 
         if(BuildConfig.DEBUG) {

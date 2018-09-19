@@ -4,9 +4,8 @@ import example.com.catdogapp.feature.home.tabs.dogs.domain.DogSource
 import example.com.catdogapp.shared.presentation.ReactivePresenter
 import example.com.catdogapp.utill.RxUtils
 import io.reactivex.rxkotlin.plusAssign
-import javax.inject.Inject
 
-class DogPresenter @Inject constructor(val source: DogSource): ReactivePresenter<DogView>() {
+class DogPresenter constructor(val source: DogSource): ReactivePresenter<DogView>() {
 
     fun getDogs() {
         disposables += source.getDogs()

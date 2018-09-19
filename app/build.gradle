@@ -52,8 +52,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    kapt 'com.google.dagger:dagger-compiler:2.11'
-    implementation 'com.google.dagger:dagger:2.11'
     compileOnly 'javax.annotation:jsr250-api:1.0'
 
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
@@ -69,6 +67,8 @@ dependencies {
 
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
 
+    implementation "org.koin:koin-android-viewmodel:1.0.0"
+    implementation "org.koin:koin-java:1.0.0"
 
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
