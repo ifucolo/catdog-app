@@ -17,17 +17,14 @@ import example.com.catdogapp.feature.home.tabs.cats.presentation.CatView
 import example.com.catdogapp.shared.ui.BaseFragment
 import example.com.catdogapp.utill.extensions.toast
 import kotlinx.android.synthetic.main.fragment_tab.*
-import javax.inject.Inject
+import org.koin.android.ext.android.inject
 
 class CatTabFragment: BaseFragment(), CatView {
 
-    @Inject
-    lateinit var presenter: CatPresenter
-
-    var progressDialog: ProgressDialog? = null
+    private val presenter: CatPresenter by inject()
+    private var progressDialog: ProgressDialog? = null
 
     companion object {
-
         fun newInstance(): CatTabFragment {
             return CatTabFragment()
         }
@@ -36,7 +33,6 @@ class CatTabFragment: BaseFragment(), CatView {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_tab, container, false)
 
-        getCoreComponent().inject(this)
         presenter.bind(this)
 
         return view
