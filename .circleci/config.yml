@@ -24,7 +24,7 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Run Build Realease
-          command: ./gradlew clean assembleStaging --stacktrace
+          command: ./gradlew clean assembleDebug --stacktrace
       - store_artifacts:
           path: app/build/outputs/apk
           destination: apks
